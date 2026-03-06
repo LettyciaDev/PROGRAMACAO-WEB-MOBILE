@@ -25,8 +25,8 @@ export default function Home() {
 
           <div className="flex justify-center text-gray-800 leading-relaxed">
             <p className="w-3/4">Olá, me chamo Lettycia Vitória, tenho 19 anos, sou entusiasta de tecnologia e estudante de ciência da computação. 
-              Sou cristã praticante. Amo cultivar plantas, práticar esportes, assistir filmes e séries. Estou sempre disponível 
-              a aprender algo novo, e estou iniciando minha carreira profissional como desenvolvedora back-end</p>
+              Sou cristã praticante. Amo cultivar plantas, praticar esportes, assistir filmes e séries. Estou sempre disponível 
+              a aprender algo novo e iniciando minha carreira profissional como desenvolvedora back-end</p>
           </div>  
 
       </div>
