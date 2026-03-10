@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.squarered{
+    background-color: red;
+    width: 700px;
+    padding: 0px;
+    height: 100px;
+}
+
+.squaregreen{
+    background-color: green;
+    width: 700px;
+    padding: 25px; 
+    height: 100px;
+}
