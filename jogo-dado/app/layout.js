@@ -1,9 +1,16 @@
 import "./globals.css";
 
+export const metadata = {
+  title: "Jogo de Dados",
+  description: "Jogo de dados entre dois jogadores",
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <body>
+        {children}
+      </body>
     </html>
   );
 }

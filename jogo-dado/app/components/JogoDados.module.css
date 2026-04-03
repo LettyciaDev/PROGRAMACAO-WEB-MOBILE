@@ -1,0 +1,165 @@
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: #fff; 
+}
+
+.header {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.titulo {
+  margin: 0;
+  color: #0070f3; 
+}
+
+.placar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: #88c3ff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  color: #fff; 
+}
+
+.placarItem {
+  text-align: center;
+}
+
+.placarPontos {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.indicadores {
+  display: flex;
+  gap: 8px;
+}
+
+.indicador {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.indicadorAtual { border-color: #0070f3; color: #0070f3; font-weight: bold; border-width: 2px; }
+.indicadorJ1 { background: #e6fffa; color: #2c7a7b; border-color: #81e6d9; }
+.indicadorJ2 { background: #fff5f5; color: #c53030; border-color: #feb2b2; }
+.indicadorEmpate { background: #fffaf0; color: #b7791f; border-color: #fbd38d; }
+
+.arena {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.cartaJogador {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  text-align: center;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.cartaJogador.ativo {
+  border-color: #0070f3;
+  background: #f0f7ff;
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.1);
+}
+
+.dados {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.btnJogar {
+  width: 100%;
+  padding: 12px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btnJogar:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.btnJogar:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.mensagem {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0070f3;
+  min-height: 1.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.fimJogo {
+  background: #110986;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 450px;
+  color: white; /* Texto branco para contrastar com o fundo azul escuro */
+}
+
+.btnReiniciar {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  color: #110986;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btnReiniciar:hover {
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  .arena { flex-direction: column; }
+  .placar { gap: 15px; padding: 10px; }
+  .cartaJogador { width: 100%; }
+}
